@@ -147,6 +147,10 @@ public class CalculadoraController implements Initializable{
     @FXML
     void onClickNumber(ActionEvent e) {
     	
+    	if(e.getSource() == ceroButton)
+		{
+			calculo.insertar('0');
+		}
     	if(e.getSource() == unoButton)
 		{
 			calculo.insertar('1');
